@@ -32,6 +32,16 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'Pepperoni',
+    price: 9,
+    category: 'entree',
+    popularity: 4,
+    rating: 10,
+    tags: 'gluten-free' 
+};
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,6 +53,7 @@
 */
 
 //CODE HERE
+console.log(pizza.popularity);
 
 
 /*
