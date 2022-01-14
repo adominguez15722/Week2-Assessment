@@ -89,6 +89,13 @@ console.log(calcFinalPrice(36, 7, .08))
 /*
     TEXT ANSWER HERE
 
+    name: 'Need name of customer to start'
+    email: 'to email out monthly deals'
+    birthday: 'to email out free meal on that day'
+    phone: 'to text out flash deals'
+
+
+
 */
 
 /*
@@ -97,3 +104,16 @@ console.log(calcFinalPrice(36, 7, .08))
 */
 
 //CODE HERE
+
+class Customer {
+    constructor(name, email, birthday, phone){
+        this.name = name;
+        this.email = email;
+        this.birthday = birthday;
+        this.phone = phone;
+    }
+}
+
+let newCustomer = new Customer('Anthony', 'adominguez@devmountain.com', '4/28/90', 123456789)
+
+console.log(newCustomer)
