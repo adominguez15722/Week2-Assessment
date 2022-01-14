@@ -53,7 +53,7 @@ const pizza = {
 */
 
 //CODE HERE
-console.log(pizza.popularity);
+// console.log(pizza.popularity);
 
 
 /*
@@ -65,7 +65,7 @@ console.log(pizza.popularity);
 
 //CODE HERE
 
-console.log(pizza.tags[1]);
+// console.log(pizza.tags[1]);
 
 
 
@@ -80,9 +80,9 @@ console.log(pizza.tags[1]);
 
 //CODE HERE
 
-const {price: pizzaPrice} = pizza
+// const {price: pizzaPrice} = pizza
 
-console.log(pizzaPrice);
+// console.log(pizzaPrice);
 
 /*
     Fourth, and last, destructure the category
@@ -93,9 +93,9 @@ console.log(pizzaPrice);
 
 //CODE HERE
 
-const {category: typeOfPizza} = pizza
+// const {category: typeOfPizza} = pizza
 
-console.log(typeOfPizza);
+// console.log(typeOfPizza);
 
 
 //////////////////PROBLEM 3////////////////////
@@ -111,6 +111,44 @@ console.log(typeOfPizza);
 */
 
 //CODE HERE
+
+let foodArr = [
+        {name: 'Pepperoni pizza',
+        price: 9,
+        category: 'entree',
+        popularity: 4,
+        rating: 10,
+        tags: ['gluten-free', 'meaty']},
+        
+        {name: 'Hawaian pizza',
+        price: 11,
+        category: 'entree',
+        popularity: 6,
+        rating: 11,
+        tags: ['pineapple', 'tasty']},
+        
+        {name: 'Supreme pizza',
+        price: 14,
+        category: 'entree',
+        popularity: 11,
+        rating: 25,
+        tags: ['family meal', 'vegetables']},
+        
+        {name: 'Hamburger',
+        price: 7,
+        category: 'entree',
+        popularity: 8,
+        rating: 2,
+        tags: ['filling', 'spicy']},
+        
+        {name: 'Fries',
+        price: 5,
+        category: 'appetizer',
+        popularity: 1,
+        rating: 1,
+        tags: ['best on menu', 'salty']}
+          
+];
 
 
 
@@ -128,7 +166,39 @@ console.log(typeOfPizza);
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.find(ele => ele.tags === 'tasty')
+
+
+
+
+
+
+    //    for(let ele in foodArr){
+//        ele === 'filling'
+//        return foodArr
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // for(let i = 0; i < ele.length; i++){
+    //     if(foodArr[i].tags === 'filling'){
+    //         return foodArr[i]
+    //     }
+    // }
+    // }
+    
+
+console.log(filteredFood)
 
 
 
