@@ -38,7 +38,7 @@ const pizza = {
     category: 'entree',
     popularity: 4,
     rating: 10,
-    tags: 'gluten-free' 
+    tags: ['gluten-free', 'meaty'] 
 };
 
 
@@ -65,6 +65,11 @@ console.log(pizza.popularity);
 
 //CODE HERE
 
+console.log(pizza.tags[1]);
+
+
+
+
 
 /*
     Third, destructure the price off of the
@@ -75,6 +80,9 @@ console.log(pizza.popularity);
 
 //CODE HERE
 
+const {price: pizzaPrice} = pizza
+
+console.log(pizzaPrice);
 
 /*
     Fourth, and last, destructure the category
@@ -84,6 +92,10 @@ console.log(pizza.popularity);
 */
 
 //CODE HERE
+
+const {category: typeOfPizza} = pizza
+
+console.log(typeOfPizza);
 
 
 //////////////////PROBLEM 3////////////////////
