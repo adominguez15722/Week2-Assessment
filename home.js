@@ -149,5 +149,9 @@ console.log(deals)
 //CODE HERE
 
 // let newDescription =deals[1].desc.replace('March', 'April');
-deals[1].desc = deals[1].desc.replace('March', 'April');
+deals[1].desc = deals[1].desc.replace('March', 'April').trim();
 console.log(deals)
+
+//ERIC WROTE THIS CODE
+
+// deals[1].desc = deals[1].desc.replace('March', 'April').trim()

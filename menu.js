@@ -125,14 +125,14 @@ let foodArr = [
         category: 'entree',
         popularity: 6,
         rating: 11,
-        tags: ['pineapple', 'tasty']},
+        tags: ['pineapple', 'tasty', 'salty']},
         
         {name: 'Supreme pizza',
         price: 14,
         category: 'entree',
         popularity: 11,
         rating: 25,
-        tags: ['family meal', 'vegetables']},
+        tags: ['family meal', 'vegetables', 'tasty']},
         
         {name: 'Hamburger',
         price: 7,
@@ -166,7 +166,7 @@ let foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.find(ele => ele.tags === 'tasty')
+// const filteredFood = foodArr.find(ele => ele.tags === 'tasty')
 
 
 
@@ -197,6 +197,17 @@ const filteredFood = foodArr.find(ele => ele.tags === 'tasty')
     // }
     // }
     
+
+
+
+
+// ERIC WROTE THIS CODE
+
+const filteredFood = foodArr.filter( foodObj => {
+    if(foodObj.tags.includes('tasty'))   {
+        return true;
+    }
+})
 
 console.log(filteredFood)
 
@@ -252,3 +263,20 @@ console.log(filteredFood)
 */
 
 //CODE HERE
+
+
+// ERIC WROTE THIS ANSWER BELOW
+
+// function filterByProperty(property, number, type)   {
+//     const filtered = foodArr.filter(function(foodObj){
+//         if( type === 'above'){
+//             return foodObj[property] > number
+//         }   else{
+//                 return foodObj[property] < number
+//         }
+//     })
+//     console.log(filtered)
+//     return filtered;
+// }
+
+// filterByProperty('popularity', 7, 'above')
