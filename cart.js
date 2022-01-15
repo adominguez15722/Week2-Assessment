@@ -91,7 +91,7 @@ console.log(calcFinalPrice(36, 7, .08))
 
     name: 'Need name of customer to start'
     email: 'to email out monthly deals'
-    birthday: 'to email out free meal on that day'
+    birthday: 'to email a coupon for a free meal on that day'
     phone: 'to text out flash deals'
 
 
