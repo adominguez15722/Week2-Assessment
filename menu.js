@@ -166,29 +166,21 @@ let foodArr = [
 
 //CODE HERE
 
+// const filtered = foodArr.filter(function(obj){
+//     if(obj.tags.includes('tasty')){
+//         return obj
+//     }
+// })
+
+// console.log(filtered);
+
 // const filteredFood = foodArr.find(ele => ele.tags === 'tasty')
-
-
-
-
 
 
     //    for(let ele in foodArr){
 //        ele === 'filling'
 //        return foodArr
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      
     
     // for(let i = 0; i < ele.length; i++){
     //     if(foodArr[i].tags === 'filling'){
@@ -197,22 +189,6 @@ let foodArr = [
     // }
     // }
     
-
-
-
-
-// ERIC WROTE THIS CODE
-
-const filteredFood = foodArr.filter( foodObj => {
-    if(foodObj.tags.includes('tasty'))   {
-        return true;
-    }
-})
-
-console.log(filteredFood)
-
-
-
 //////////////////PROBLEM 5////////////////////
 /* 
     Now let's write a function that's a little
@@ -254,6 +230,22 @@ console.log(filteredFood)
 
 //CODE HERE
 
+function filterByProperty(property, number, type)   {
+    let filteredArr = foodArr.filter(function(ele){
+        if(type === 'above'){
+            return ele[property] > number 
+        }   else{
+            return ele[property] < number
+        }
+    });
+    console.log(filteredArr)
+    return filteredArr
+}
+
+
+
+
+
 
 /*
     Invoke the `filterByProperty` function passing
@@ -265,18 +257,4 @@ console.log(filteredFood)
 //CODE HERE
 
 
-// ERIC WROTE THIS ANSWER BELOW
-
-// function filterByProperty(property, number, type)   {
-//     const filtered = foodArr.filter(function(foodObj){
-//         if( type === 'above'){
-//             return foodObj[property] > number
-//         }   else{
-//                 return foodObj[property] < number
-//         }
-//     })
-//     console.log(filtered)
-//     return filtered;
-// }
-
-// filterByProperty('popularity', 7, 'above')
+filterByProperty('rating', 3, 'above')
